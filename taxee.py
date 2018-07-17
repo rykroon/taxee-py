@@ -167,6 +167,11 @@ class TaxStatistic():
 
         return Exemption(name,amount)
 
+    def __str__(self):
+        result = "Tax Statistics for " + self.filing_status + " filers for year " + str(self.year);
+        if self.state is not None: rest += " in " + self.state
+        return result
+
 
 class Deduction():
     def __init__(self,name,amount):
@@ -184,3 +189,8 @@ class IncomeTaxBracket():
         self.marginal_rate = marginal_rate
         self.marginal_capital_gain_rate = marginal_capital_gain_rate
         self.amount = amount
+
+if __name__ == "__main__":
+    print("Name = " + __name__)
+else:
+    print("Name = " + __name__)
