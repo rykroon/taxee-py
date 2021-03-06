@@ -4,28 +4,6 @@ import requests
 from requests.auth import AuthBase
 
 
-SINGLE = 'single'
-MARRIED = 'married'
-MARRIED_SEPARATELY = 'married_separately'
-HEAD_OF_HOUSEHOLD = 'head_of_household'
-
-FILING_STATUSES = (
-    SINGLE, 
-    MARRIED, 
-    MARRIED_SEPARATELY, 
-    HEAD_OF_HOUSEHOLD
-)
-
-
-STATES = (
-    "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DC", "DE", "FL", "GA", 
-    "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", 
-    "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", 
-    "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", 
-    "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY"
-)
-
-
 class Taxee:
 
     def __init__(self,api_key=None):
